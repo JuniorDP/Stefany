@@ -3,11 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Turismo Mari&ntildeo</title>
+	<meta  name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<link rel="stylesheet" href="estilos.css">
 	<link rel="stylesheet" href="Regiones.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script>
+	$(function () {
+	$("#datepicker").datepicker();
+	});
+	</script>
 </head>
 
 <body>
+	<div id="formulario">
+		<form>
+			<label for="nombre">Ingrese su nombre:</label>
+			<input type="text" placeholder"Escribe tu nombre" maxlength="22" name="nombre" id="nombre">
+			<p>
+			<label for="apellido">Ingrese su apellido:</label>
+			<input type="text" placeholder"Escribe tu apellido" maxlength="22" name="apellido" id="apellido">
+			<p>
+			<label for="correo">Ingrese su correo:</label>
+			<input type="email" placeholder"Escribe tu email" name="correo" id="correo">
+			<p>Sexo:
+			<input type="radio" name="genero" value="hombre" /> HOMBRE
+ 			<input type="radio" name="genero" value="mujer" /> MUJER
+ 			<p>
+ 			Foto: <input type="file" name="foto">
+ 			<p>
+ 			Fecha: <input type="text" id="datepicker">
+ 			<p>
+ 				Destino: 
+ 			<select name="destino" id="destino">
+ 				<option value=""></option>
+ 				<option value="Arequipa">Arequipa</option>
+				<option value="Ayacucho">Ayacucho</option>
+				<option value="Barranca">Barranca</option>
+				<option value="Callao">Callao</option>
+				<option value="Caral">Caral</option>
+				<option value="Chachapoyas">Chachapoyas</option>
+				<option value="Chancay">Chancay</option>
+				<option value="Chiclayo">Chiclayo</option>
+				<option value="Churín">Churín</option>
+				<option value="Cuzco">Cuzco</option>
+				<option value="Huacachina">Huacachina</option>
+				<option value="Huacho">Huacho</option>
+				<option value="Huancayo">Huancayo</option>
+				<option value="Huaraz">Huaraz</option>
+				<option value="Ica">Ica</option>
+				<option value="Ilo">Ilo</option>
+				<option value="Iquitos">Iquitos</option>
+				<option value="Lima">Lima</option>
+				<option value="Lunahuaná">Lunahuaná</option>
+				<option value="Máncora">Máncora</option>
+				<option value="Ollantaytambo">Ollantaytambo</option>
+				<option value="Paracas">Paracas</option>
+				<option value="Pisco">Pisco</option>
+				<option value="Piura">Piura</option>
+				<option value="Pucallpa">Pucallpa</option>
+				<option value="Puerto Maldonado">Puerto Maldonado</option>
+				<option value="Puno">Puno</option>
+				<option value="Tacna">Tacna</option>
+				<option value="Tarapoto">Tarapoto</option>
+				<option value="Tingo María">Tingo María</option>
+ 				<option value="Trujillo">Trujillo</option>
+ 			</select>
+ 			<p>	
+			Consulta: <textarea name="comentarios" rows="10" cols="40">Escribe aquí tu consulta...</textarea>
+			<p>
+ 			<button id="boton">Enviar formulario</button>
+		</form>
+	</div>
 <div id="header">
 	<ul class="nav">
 		<li><a href="http://wiki.israelcueva.com/Colegio/Proyectos/4-Secundaria" target="_blank">Inicio</a></li>
@@ -18,10 +86,29 @@
 	</ul>
 
 <div class="contenedor">
-	<header><h1>Regiones del Per&uacute</h1>
-	</header>
+	<header><h1>Regiones del Per&uacute</h1></header>
 	<section class="main">
-	<img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Peru_veg_1970.jpg" alt="">
+<div class="slider">
+	<ul>
+	<li><img src="destino/Machupichu.jpg" WIDTH=178 HEIGHT=180 alt="Machupichu"></li>
+	<li><img src="destino/Nazca.jpg" WIDTH=178 HEIGHT=180 alt="Nazca"></li>
+	<li><img src="destino/Misti.jpg" WIDTH=178 HEIGHT=180 alt="Misti"></li>
+	<li><img src="destino/Lunahuana.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Callao.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Tingo Maria.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Tarapoto.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Puno.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Caral.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Huancayo.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Iquitos.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Lima.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Huacho.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Paracas.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	<li><img src="destino/Mancora.jpg" WIDTH=178 HEIGHT=180 alt=""></li>
+	</ul>
+</div>
+	<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Peru_veg_1970.jpg" alt="">
+-->
 	<p>
 	Costa:
 Una estrecha franja de desiertos y valles f&eacutertiles ba&ntildeados por el oc&eacuteano Pac&iacutefico caracterizan la costa peruana. Los valles f&eacutertiles surgen de los r&iacuteos que bajan de la Cordillera de los Andes, la divisi&oacuten geogr&aacutefica con la sierra, y se pierden en el mar.
